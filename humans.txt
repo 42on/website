@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Francesco Cavallieri - francesco@cavallieri.nl
+    Caithlin Bergman - caithlin@cavallieri.nl
+
+# TECHNOLOGY COLOPHON
+
+    HTML5 & CSS3 - Sublime Text 3
+

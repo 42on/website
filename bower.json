@@ -1,0 +1,14 @@
+{
+  "name": "42on",
+  "version": "1.0.0",
+  "author": [
+    "Francesco Cavallieri <francesco@cavallieri.nl>"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "latest",
+    "html5shiv": "latest",
+    "respond": "latest",
+    "bootstrap": "latest"
+  }
+}

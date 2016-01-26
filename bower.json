@@ -6,9 +6,9 @@
   ],
   "private": true,
   "dependencies": {
-    "jquery": "latest",
-    "html5shiv": "latest",
-    "respond": "latest",
-    "bootstrap": "latest"
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "respond": "~1.4.2",
+    "html5shiv": "~3.7.3"
   }
 }

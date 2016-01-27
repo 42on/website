@@ -135,7 +135,7 @@ NAVBAR
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #ffffff;
-    background-color: #d86f09;
+    background-color: #e98616;
 }
 
 @media (min-width: 768px) {
@@ -164,6 +164,10 @@ NAVBAR
 
     .navbar-inverse .navbar-nav>li:last-child {
         margin-right: 0;
+    }
+
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        background-color: #d86f09;
     }
 }
 
@@ -365,6 +369,7 @@ GOOGLE MAPS
 }
 
 .maps-content {
+    /* http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps */
     pointer-events: none;
     width: 100%;
     height: 300px;

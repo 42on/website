@@ -222,11 +222,11 @@ HERO
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    padding: 5% 0;
+    /* padding: 5% 0; */
 }
 
 .hero-content {
-    padding: 30% 0;
+    padding: 84px 0 0 0;
     text-align: center;
 }
 
@@ -238,10 +238,10 @@ HERO
 }
 
 .hero-content ul {
-    margin-top: 19px;
+    margin-top: 9px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .hero {
         background: url('../images/clouds.jpg');
         background-repeat: no-repeat;
@@ -263,6 +263,15 @@ HERO
         font-size: 35px;
         line-height: 40px;
     }
+
+    .hero-content h1 span {
+        display: block;
+    }
+
+    .hero-content ul {
+        margin-top: 19px;
+    }
+
 }
 
 /*

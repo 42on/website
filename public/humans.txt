@@ -9,4 +9,3 @@
 # TECHNOLOGY COLOPHON
 
     HTML5 & CSS3 - Sublime Text 3
-

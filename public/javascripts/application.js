@@ -20,4 +20,7 @@ $(function() {
     }
     scrollNav();
 
+    // Google Maps
+    $(".maps-wrapper").html('<iframe class="maps-content" src="https://maps.google.com/maps?hl=nl&q=Londensekaai+1,+Middelburg&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed" width="100%" height="300" frameborder="0" style="border:0"></iframe>');
+
 });

@@ -44,7 +44,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="./index.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="#overview" title="Ceph training overview">Overview</a></li>
                 <li><a href="#pricing" title="Pricing">Pricing</a></li>
                 <li><a href="#contact" title="Contact">Contact</a></li>
@@ -64,22 +64,40 @@
                         <span><strong>42on</strong> provides high quality Ceph <strong>training</strong></span>
                     </h1>
 
+                    <h1>
+                        <span>Get trained by Ceph expert <strong>Wido den Hollander</strong>, a Ceph expert with over 6 years of experience!</span>
+                    </h1>
+
                     <ul class="list-inline list-unstyled center-block">
                         <li>
                             <img src="images/ceph-logo.png" height="57px" alt="Ceph">
                         </li>
                     </ul>
 
-                    <h1>
-                        <span>Get trained by Ceph expert <strong>Wido den Hollander</strong>, a Ceph expert with over 6 years of experience.</span>
-                    </h1>
+                    <ul class="list-inline list-unstyled center-block scroll">
+                        <li>
+                            <a href="#overview" class="btn btn-42" title="Ceph training overview">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pricing" class="btn btn-42" title="Pricing">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#wido" class="btn btn-42" title="Wido den Hollander">
+                                Who is Wido?
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<section id="cephadvantages" class="wrapper">
+<section id="overview" class="wrapper">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">
@@ -91,10 +109,10 @@
                 <div class="col-md-4">
                     <div class="block">
                         <h2>
-                            Object storage
+                            In person
                         </h2>
                         <p>
-                            Object storage is at the heart of Ceph. You can store millions of objects through language bindings for C, C++, Python, PHP and Java or use the S3 compatible REST gateway.
+                            Our training courses are in person. They can be organized in-house or at a location nearby your staff
                         </p>
                     </div>
                 </div>
@@ -102,10 +120,10 @@
                 <div class="col-md-4">
                     <div class="block">
                         <h2>
-                            Block storage
+                            2-days
                         </h2>
                         <p>
-                            Based on the Object storage of Ceph it provides a fully distributed Block Device with integration inti Qemu (KVM), libvirt, CloudStack and OpenStack.
+                            The training is split in to two days. One day of class-room theory and one day of hands-on excersises using Virtual Machines
                         </p>
                     </div>
                 </div>
@@ -113,10 +131,10 @@
                 <div class="col-md-4">
                     <div class="block">
                         <h2>
-                            File storage
+                            Deep-dive
                         </h2>
                         <p>
-                            A fully distributed POSIX-compliant file system striped over replicated objects in the Ceph cluster. You can store large amounts of data and scale when needed.
+                            The complete internals and protocols will be covered during the training. Starting with the design philosophy behind Ceph working towards the inner workings of the different components
                         </p>
                     </div>
                 </div>
@@ -138,38 +156,33 @@
     </div>
 </section>
 
-<section id="ceph" class="">
+<section id="wido" class="">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">
                 <h1>
-                    More about Ceph
+                    Who is Wido?
                 </h1>
 
                 <p>
-                    Ceph is a Open Source distributed object store. It runs on commodity hardware providing a fault tolerant and self-healing storage platform. With Object, Block and File storage it truly is a unified storage platform without a vendor lock-in.
+                    Wido den Hollander (NL) is a fan of Open Source software and has been involved with the Ceph project since 2009.
                 </p>
 
                 <p>
-                    At 42on we have over 5 years of Ceph experience and contributed many features and bugfixes to Ceph and the eco-system around it.
+                    His background is in the hosting industry where he has build complex IT-infrastructures which require 24/7 access.
                 </p>
 
                 <p>
-                    Our main person is <a href="http://blog.widodh.nl/" target="_blank">Wido den Hollander</a> who has extensive experience with building and running Ceph clusters for businesses, organizations and government agencies. These range from TerraBytes into the PetaBytes.
+                    During his involvement in the Ceph community he has contributed various components, patches and fixed bugs. A overview of his contributions:
                 </p>
 
-                <ul class="col-md-12 list-inline list-unstyled center-block scroll">
-                    <li>
-                        <a href="http://www.ceph.com" target="_blank" class="btn btn-42" title="Ceph website">
-                            Ceph website
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="btn btn-42" title="Contact 42on about IPv6 advantages">
-                            Contact us
-                        </a>
-                    </li>
+                <ul>
+                    <li>PHP extension for RADOS: <a href="https://github.com/ceph/phprados" target="_blank">phprados</a></li>
+                    <li>Java bindings for RADOS: <a href="https://github.com/ceph/rados-java" target="_blank">rados-java</a></li>
+                    <li>RBD storage pool integration of <a href="http://libvirt.org/" target="_blank">libvirt</a></li>
+                    <li>Various related IPv6 patches for Ceph</a>
                 </ul>
+
             </div>
         </div>
     </div>

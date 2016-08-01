@@ -1,6 +1,7 @@
 Redirect 301 /pricing http://www.42on.com/#pricing
 Redirect 301 /contact http://www.42on.com/#contact
 Redirect 301 /training http://www.42on.com/#contact
+Redirect 301 /ceph-collect https://github.com/42on/ceph-collect
 
 ExpiresActive On
 ExpiresByType text/css "access plus 12 hours"

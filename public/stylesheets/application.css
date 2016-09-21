@@ -73,11 +73,24 @@ NAVBAR
 ==========================================================
  */
 
+.nav-grey {
+    background-color: #b2b2b2;
+    font-size: 20px !important;
+}
+
+.nav-grey>li>a {
+    font-size: 15px !important;
+    line-height: 17px !important;
+    padding: 15px 0px 15px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+}
+
 .navbar {
     background-color: #e98616;
     color: #fafafa;
     border: 0;
     margin-bottom: 0;
+
 }
 
 .navbar-nav {
@@ -93,6 +106,7 @@ NAVBAR
     color: #fafafa;
     outline: 0;
 }
+
 
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #eeeeee;
@@ -111,6 +125,7 @@ NAVBAR
 
 .navbar-inverse .navbar-toggle {
     border-color: #e98616;
+    border: 0px;
 }
 
 .navbar-inverse .navbar-toggle:a {
@@ -131,12 +146,21 @@ NAVBAR
 
 .navbar-inverse .navbar-collapse {
     border-color: #e98616;
+    border: 0px;
+    max-height: 1000px;
+
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #ffffff;
     background-color: #e98616;
 }
+
+li.hideme {
+    font-size: 15px;
+}
+
+
 
 @media (min-width: 768px) {
     .navbar {
@@ -169,6 +193,30 @@ NAVBAR
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
         background-color: #d86f09;
     }
+
+    .navbar-inverse .navbar-toggle:a {
+        background-color: #e98616;
+    }
+
+    .navbar-inverse .navbar-toggle:hover {
+        background-color: #d86f09;
+    }
+
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: #d86f09;
+    }
+
+    .navbar-inverse .navbar-toggle:active {
+        background-color: #e98616;
+    }
+
+    .hideme {
+        display: none
+    }
+
+    li.hideme {
+        display: none
+    }
 }
 
 @media (min-width: 992px) {
@@ -176,6 +224,16 @@ NAVBAR
         margin-right: 57px;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 /*
 ==========================================================
@@ -208,6 +266,8 @@ BUTTONS
     color: #fafafa;
     background: #d76c04;
 }
+
+
 
 /*
 ==========================================================

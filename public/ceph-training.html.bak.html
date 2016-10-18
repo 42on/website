@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<nav style="overflow: auto;"class="navbar navbar-inverse navbar-fixed-top center scroll" role="navigation" id="top">
+<nav class="navbar navbar-inverse navbar-fixed-top center scroll" role="navigation" id="top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -42,27 +42,16 @@
                 <span class="navmenu">Navigation</span>
             </button>
         </div>
-
-        <ul class="collapse navbar-collapse nav navbar-nav" id="navbar-collapse">
-            <li><a href="index.html" title="Home">Home</a></li>
-            <li><a href="#home" title="Ceph Training">Ceph Training details</a></li>
-            <li><a href="#contact" title="Contact 42on about Ceph and IPv6">Contact</a></li>
-            <hr class="hideme">
-            <li class="hideme"><a href="#overview" title="Trainings overview">Trainings overview</a></li>
-            <li class="hideme"><a href="#topics" title="Covered topics">Covered topics</a></li>
-            <li class="hideme"><a href="#advanced" title="Advanced training">Advanced training</a></li>
-            <li class="hideme"><a href="#pricing" title="Pricing">Pricing</a></li>
-            <li class="hideme"><a href="#planning" title="Our scheduled trainings">Our scheduled trainings</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#overview" title="Ceph training overview">Overview</a></li>
+                <li><a href="#topics" title="Pricing">Topics</a></li>
+                <li><a href="#pricing" title="Pricing">Pricing</a></li>
+                <li><a href="#contact" title="Contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
-
-    <ul class="collapse navbar-collapse nav navbar-nav nav-grey" id="subnav">
-        <li><a href="#overview" title="Ceph trainings overview">Trainings overview</a></li>
-        <li><a href="#topics" title="Covered topics">Covered topics</a></li>
-        <li><a href="#advanced" title="Advanced training">Advanced training</a></li>
-        <li><a href="#pricing" title="Pricing">Pricing</a></li>
-        <li><a href="#planning" title="Out scheduled trainings">Our scheduled trainings</a></li>
-    </ul>
 </nav>
 
 <header id="home" role="banner">
@@ -227,26 +216,86 @@
                     </div>
                 </div>
 
-                <ul class="list-inline list-unstyled center-block scroll">
-                    <li>
-                        <a href="#advanced" class="btn btn-42" title="Advanced training">
-                            Advanced training
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="btn btn-42" title="Contact 42 on directly">
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
-
             </div>
         </div>
     </div>
 </section>
 
-<section id="advanced" class="wrapper">
+<section id="wido" class="wrapper">
+    <div class="container">
+        <div class="row content">
+            <img src="images/widodh-avatar2.jpg" class="center-block" alt="" />
+
+            <h1>
+                Who is Wido?
+            </h1>
+
+            <p>
+                <a href="http://blog.widodh.nl/" target="_blank">Wido den Hollander</a> (NL) is a fan of Open Source software. Since 2009 he has been a member of the Ceph community.
+            </p>
+
+            <p>
+                His background is in the hosting industry where he has build complex IT-infrastructures which require 24/7 access.
+            </p>
+
+            <p>
+                In the past years he has deployed Ceph clusters at numerous clients over the world. Ranging from tens of TerraBytes to PetaBytes in size.
+            </p>
+
+            <p>
+                During his involvement in the Ceph community he has contributed various components, patches and fixed bugs. A highlight of his contributions:
+            </p>
+
+            <div class="col-md-12">
+
+                <div class="col-md-4">
+                    <div class="block">
+                        <h2>PHP and Java</h2>
+                        <p><a href="https://github.com/ceph/phprados" target="_blank">PHP</a> and <a href="https://github.com/ceph/rados-java" target="_blank">Java</a> bindings for librados</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="block">
+                        <h2>RBD for libvirt</h2>
+                        <p>RBD storage pool integration of <a href="http://libvirt.org/" target="_blank">libvirt</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="block">
+                        <h2>IPv6</h2>
+                        <p>Various IPv6 patches for Ceph</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="list-inline list-unstyled center-block scroll">
+                <li>
+                    <a href="https://twitter.com/widodh" target="_blank" class="btn btn-42" title="Wido's Twitter">
+                        Twitter
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/wido" target="_blank" class="btn btn-42" title="Wido's Github">
+                        Github
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/widodh" target="_blank" class="btn btn-42" title="Wido's Twitter">
+                        LinkedIn
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="advanced">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">
@@ -255,22 +304,19 @@
                 </h1>
 
                 <p>
-                    Next to the Basic Ceph training there is also a Advanced Ceph Training available.<br/><br/>
+                    Next to the Basic Ceph training there is also a Advanced Ceph Training available.
+                </p>
 
+                <p>
                     The advanced Ceph training is focussed on developers who directly want to interact with librados, librbd or libcephfs using Python, Java or PHP.
                     The <a href="https://github.com/ceph/phprados" target="_blank">PHP extension</a> and <a href="https://github.com/ceph/rados-java" target="_blank">Java bindings</a> for librados were written by <a href="#wido">Wido den Hollander</a>
-                    <br/><br/>
+                </p>
 
+                <p>
                     This training is tailored to the wishes of the customer. Please contact us for more information.
                 </p>
 
                 <ul class="list-inline list-unstyled center-block scroll">
-                    <li>
-                        <a href="#pricing" class="btn btn-42" title="Pricing">
-                            Pricing
-                        </a>
-                    </li>
-
                     <li>
                         <a href="#contact" class="btn btn-42" title="Contact 42 on directly">
                             Contact us
@@ -282,7 +328,7 @@
     </div>
 </section>
 
-<section id="pricing">
+<section id="pricing" class="wrapper">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">
@@ -343,69 +389,7 @@
 
                 <ul class="list-inline list-unstyled center-block scroll">
                     <li>
-                        <a href="#planning" class="btn btn-42" title="View scheduled trainings">
-                            View scheduled trainings
-                        </a>
-                    </li>
-
-                    <li>
                         <a href="#contact" class="btn btn-42" title="Contact 42on directly">
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="planning" class="wrapper">
-    <div class="container">
-        <div class="row content">
-            <div class="col-md-12">
-                <h1>
-                    Scheduled trainings
-                </h1>
-
-                <p>
-                    The following trainings are scheduled. Please contact us if you would like to attend one of these training.
-                </p>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>
-                            Basic Ceph training
-                        </h3>
-                        <ul>
-                            <li>
-                                Currently, there is no Basic Ceph training scheduled.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h3>
-                            Advanced Ceph training
-                        </h3>
-                        <ul>
-                            <li>
-                                Currently, there is no Advanced Ceph training scheduled.
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </div>
-
-                <ul class="list-inline list-unstyled center-block scroll">
-                    <li>
-                        <a href="#pricing" class="btn btn-42" title="Pricing">
-                            Pricing
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="btn btn-42" title="Contact 42 on directly">
                             Contact us
                         </a>
                     </li>

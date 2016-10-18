@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<nav style="overflow: auto;"class="navbar navbar-inverse navbar-fixed-top center scroll" role="navigation" id="top">
+<nav class="navbar navbar-inverse navbar-fixed-top center scroll" role="navigation" id="top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -42,29 +42,15 @@
                 <span class="navmenu">Navigation</span>
             </button>
         </div>
-
-        <ul class="collapse navbar-collapse nav navbar-nav" id="navbar-collapse">
-            <li><a href="#home" title="Home">Home</a></li>
-            <li><a href="ceph-training.html" title="Ceph Training">Ceph Training details</a></li>
-            <li><a href="#contact" title="Contact 42on about Ceph and IPv6">Contact</a></li>
-            <hr class="hideme">
-            <li class="hideme"><a href="#cephadvantages" title="Ceph">Ceph</a></li>
-            <li class="hideme"><a href="#ipv6advantages" title="IPv6">IPv6</a></li>
-            <li class="hideme"><a href="#42on" title="Why choose 42on">Why choose 42on?</a></li>
-            <li class="hideme"><a href="#wido" title="Who is Wido">Who is Wido?</a></li>
-            <li class="hideme"><a href="#training" title="Trainings by 42on">Trainings by 42on</a></li>
-            <li class="hideme"><a href="#pricing" title="Pricing">Pricing</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#home" title="Home">Home</a></li>
+                <li><a href="ceph-training.html" title="Ceph Training">Ceph Training</a></li>
+                <li><a href="#pricing" title="Pricing">Pricing</a></li>
+                <li><a href="#contact" title="Contact 42on about Ceph and IPv6">Contact</a></li>
+            </ul>
+        </div>
     </div>
-
-    <ul class="collapse navbar-collapse nav navbar-nav nav-grey" id="subnav">
-        <li><a href="#cephadvantages" title="Ceph">Ceph</a></li>
-        <li><a href="#ipv6advantages" title="IPv6">IPv6</a></li>
-        <li><a href="#42on" title="Why choose 42on">Why choose 42on?</a></li>
-        <li><a href="#wido" title="Who is Wido">Who is Wido?</a></li>
-        <li><a href="#training" title="Trainings by 42on">Trainings by 42on</a></li>
-        <li><a href="#pricing" title="Pricing">Pricing</a></li>
-    </ul>
 </nav>
 
 <header id="home" role="banner">
@@ -75,9 +61,9 @@
                     <img src="images/42on-logo.png" height="150px" alt="42on Ceph and IPv6">
 
                     <h1>
-                        <span>At <strong>42on</strong> we love <a href="#cephadvantages" title="">Ceph</a> and <a href="#ipv6advantages" title="">IPv6</a>!</span>
+                        <span>At <strong>42on</strong> we love  <a href="#cephadvantages" title="">Ceph</a> and <a href="#ipv6advantages" title="">IPv6</a>!</span>
                         <span>That is why we provide high quality <strong>training</strong>, <strong>support</strong></span> and <strong>consultancy</strong> for both.</span>
-                     </h1>
+                    </h1>
 
                     <ul class="list-inline list-unstyled center-block">
                         <li>
@@ -154,13 +140,11 @@
                             More about Ceph
                         </a>
                     </li>
-
-                     <li>
+                    <li>
                         <a href="ceph-training.html" class="btn btn-42" title="Ceph training">
-                            More details on Ceph trainings
+                            Ceph training
                         </a>
                     </li>
-
                     <li>
                         <a href="#contact" class="btn btn-42" title="Contact 42on about Ceph">
                             Contact us
@@ -193,25 +177,11 @@
                 </p>
 
                 <ul class="col-md-12 list-inline list-unstyled center-block scroll">
-
                     <li>
                         <a href="http://www.ceph.com" target="_blank" class="btn btn-42" title="Ceph website">
                             Ceph website
                         </a>
                     </li>
-
-                    <li>
-                        <a href="ceph-training.html" class="btn btn-42" title="Ceph training">
-                            More details on Ceph trainings
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#ipv6advantages" target="_blank" class="btn btn-42" title="Ipv6 advantages">
-                            Ipv6 advantages
-                        </a>
-                    </li>
-
                     <li>
                         <a href="#contact" class="btn btn-42" title="Contact 42on about IPv6 advantages">
                             Contact us
@@ -342,8 +312,8 @@
 
                 <ul class="list-inline list-unstyled center-block scroll">
                     <li>
-                        <a href="#wido" class="btn btn-42" title="Who is Wido?">
-                            Who is Wido?
+                        <a href="#pricing" class="btn btn-42" title="What do we charge?">
+                            What do we charge?
                         </a>
                     </li>
                     <li>
@@ -352,93 +322,12 @@
                         </a>
                     </li>
                 </ul>
-
-
             </div>
         </div>
     </div>
 </section>
 
-<section id="wido">
-    <div class="container">
-        <div class="row content">
-            <center><img class="img-responsive" src="images/widodh-avatar2.jpg" class="center-block" alt="" /></center>
-
-            <h1>
-                Who is Wido?
-            </h1>
-
-            <p>
-                <a href="http://blog.widodh.nl/" target="_blank">Wido den Hollander</a> (NL) is a fan of Open Source software. Since 2009 he has been a member of the Ceph community.<br/><br/>
-
-                His background is in the hosting industry where he has build complex IT-infrastructures which require 24/7 access. In the past years he has deployed Ceph clusters at numerous clients over the world. Ranging from tens of TerraBytes to PetaBytes in size.<br/><br/>
-
-                During his involvement in the Ceph community he has contributed various components, patches and fixed bugs. A highlight of his contributions:
-            </p>
-
-
-            <div class="col-md-12">
-
-                <div class="col-md-4">
-                    <div class="block">
-                        <h2>PHP and Java</h2>
-                        <p><a href="https://github.com/ceph/phprados" target="_blank">PHP</a> and <a href="https://github.com/ceph/rados-java" target="_blank">Java</a> bindings for librados</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="block">
-                        <h2>RBD for libvirt</h2>
-                        <p>RBD storage pool integration of <a href="http://libvirt.org/" target="_blank">libvirt</a></p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="block">
-                        <h2>IPv6</h2>
-                        <p>Various IPv6 patches for Ceph</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <ul class="list-inline list-unstyled center-block scroll">
-                <li>
-                    <a href="#training" class="btn btn-42" title="Ceph and IPv6 training">
-                        Ceph and IPv6 training
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://twitter.com/widodh" target="_blank" class="btn btn-42" title="Wido's Twitter">
-                        Twitter
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/wido" target="_blank" class="btn btn-42" title="Wido's Github">
-                        Github
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/widodh" target="_blank" class="btn btn-42" title="Wido's Twitter">
-                        LinkedIn
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact" class="btn btn-42" title="Contact 42 on directly">
-                        Contact us
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="training" class="wrapper">
+<section id="training">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">
@@ -465,12 +354,7 @@
                 <ul class="list-inline list-unstyled center-block scroll">
                     <li>
                         <a href="ceph-training.html" class="btn btn-42" title="Ceph training">
-                            More details on Ceph trainings
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#pricing" class="btn btn-42" title="What do we charge?">
-                            What do we charge?
+                            Ceph training
                         </a>
                     </li>
                     <li>
@@ -484,7 +368,7 @@
     </div>
 </section>
 
-<section id="pricing">
+<section id="pricing" class="wrapper">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">

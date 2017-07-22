@@ -33,8 +33,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top center scroll" role="navigation" id="top" role="navigation">
-    <div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top scroll" role="navigation" id="top">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -42,13 +42,20 @@
                 <span class="navmenu">Navigation</span>
             </button>
         </div>
+
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="#overview" title="Ceph training overview">Overview</a></li>
-                <li><a href="#topics" title="Pricing">Topics</a></li>
+                <li><a href="#home" title="Ceph Training">Ceph Training details</a></li>
+                <li><a href="#contact" title="Contact 42on about Ceph and IPv6">Contact</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav nav-grey">
+                <li><a href="#overview" title="Overview">Overview</a></li>
+                <li><a href="#topics" title="Covered topics">Covered topics</a></li>
+                <li><a href="#wido" title="Who is Wido">Who is Wido?</a></li>
+                <li><a href="#advanced" title="Advanced training">Advanced training</a></li>
                 <li><a href="#pricing" title="Pricing">Pricing</a></li>
-                <li><a href="#contact" title="Contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -221,6 +228,19 @@
                     </div>
                 </div>
 
+                <ul class="list-inline list-unstyled center-block scroll">
+                    <li>
+                        <a href="#advanced" class="btn btn-42" title="Advanced training">
+                            Advanced training
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="btn btn-42" title="Contact 42 on directly">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>
@@ -229,7 +249,7 @@
 <section id="wido" class="wrapper">
     <div class="container">
         <div class="row content">
-            <img src="images/widodh-avatar2.jpg" class="center-block" alt="" />
+            <img src="images/widodh-avatar2.jpg" class="center-block" alt="">
 
             <h1>
                 Who is Wido?
@@ -300,7 +320,7 @@
     </div>
 </section>
 
-<section id="advanced">
+<section id="advanced" class="">
     <div class="container">
         <div class="row content">
             <div class="col-md-12">
@@ -309,19 +329,22 @@
                 </h1>
 
                 <p>
-                    Next to the Basic Ceph training there is also a Advanced Ceph Training available.
-                </p>
+                    Next to the Basic Ceph training there is also an Advanced Ceph Training available.<br/><br/>
 
-                <p>
                     The advanced Ceph training is focussed on developers who directly want to interact with librados, librbd or libcephfs using Python, Java or PHP.
                     The <a href="https://github.com/ceph/phprados" target="_blank">PHP extension</a> and <a href="https://github.com/ceph/rados-java" target="_blank">Java bindings</a> for librados were written by <a href="#wido">Wido den Hollander</a>
-                </p>
+                    <br/><br/>
 
-                <p>
                     This training is tailored to the wishes of the customer. Please contact us for more information.
                 </p>
 
                 <ul class="list-inline list-unstyled center-block scroll">
+                    <li>
+                        <a href="#pricing" class="btn btn-42" title="Pricing">
+                            Pricing
+                        </a>
+                    </li>
+
                     <li>
                         <a href="#contact" class="btn btn-42" title="Contact 42 on directly">
                             Contact us
@@ -422,7 +445,7 @@
                         </h3>
                         <ul>
                             <li>
-                                All traininges require at least 3 attendees with a maximum of 8.
+                                All trainings require at least 3 attendees with a maximum of 8.
                             </li>
                         </ul>
                     </div>
